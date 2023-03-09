@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:ital,wght@0,500;0,900;1,700&display=swap');
+
+*{
+      margin:0;
+      padding:0;
+      font-family: 'Red Hat Display', sans-serif;
+}
+body{
+      min-height: 100vh;
+      background-image: url(images/pattern-background-desktop.svg);
+      background-repeat: no-repeat;
+      background-size: contain;
+      background-color:hsl(225, 100%, 94%);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+}
+.container{
+      width: 370px;
+      background-color: hsl(225, 100%, 98%);
+      overflow: hidden;
+      box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+      border-radius: 20px;
+}
+
+.img-box img{
+      display: block;
+      max-width: 100%;
+      height: auto;
+}
+.content{
+      padding: 30px 40px;
+      text-align: center;
+}
+.Title{
+      font-size: 1.4rem;
+      color:  hsl(224, 34%, 15%);
+      font-weight: 900;
+}
+.details{
+      font-size: 15px;
+      margin-top: 10px;
+      line-height: 25px;
+      color:  hsl(224, 23%, 55%);
+      font-weight: 500;
+}
+.plan_box{
+      display: flex;
+      margin-top: 15px;
+      justify-content: space-between;
+      align-items: center;
+      background-color: hsl(224, 41%, 95%);
+      border-radius: 10px;
+      padding: 10px 10px;
+
+}
+.plan_box_left{
+      display: flex;
+}
+
+.price-details{
+      text-align: left;
+      margin-left: 15px;
+}
+.price-details h4{
+      font-size: 15px;
+      font-weight: 700;
+      margin-bottom: 5px;
+}
+.price{
+      font-size: 12px;
+      color: hsl(224, 23%, 55%);
+}
+.plan_box_right a{
+      text-align: center;
+      color: hsl(245, 75%, 52%);
+      font-size: 15px;
+}
+.button_section{
+      margin-top: 25px;
+}
+.proceed{
+      background-color: hsl(245, 75%, 52%);
+      padding: 10px 70px;
+      color: white;
+      border-radius: 7px;
+      font-size: 15px;
+      border:1px solid hsl(245, 75%, 52%);
+      box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+}
+.proceed:hover{
+      background-color: hsl(223, 45%, 28%);
+}
+.cancel{
+      margin-top: 18px;
+      display: block;
+      font-size: 13px;
+      text-decoration: none;
+      color: hsl(224, 23%, 55%);
+      font-weight: 700;
+      text-decoration:none;
+}
+.cancel:hover{
+      color: hsl(223, 45%, 28%);
+}
