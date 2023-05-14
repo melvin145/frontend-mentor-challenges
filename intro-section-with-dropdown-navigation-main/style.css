@@ -86,7 +86,7 @@ body{
             flex-direction: row;
             justify-content: space-between;
             width: 100%;
-            background-color: rgb(250, 253, 253);
+            background-color: var(--primary-color);
             align-items: center;
             position: relative;
             margin-left:20px ;
@@ -100,6 +100,5 @@ body{
             flex-direction: row;
             align-items: center;
             list-style: none;
-      
       }
 }
