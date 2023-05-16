@@ -1,44 +1,83 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  <link rel="stylesheet" href="style.css">
-  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-  
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png" />
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
+
   <title>Frontend Mentor | Intro section with dropdown navigation</title>
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
+    .attribution {
+      font-size: 11px;
+      text-align: center;
+    }
+
+    .attribution a {
+      color: hsl(228, 45%, 44%);
+    }
   </style>
 </head>
+
 <body>
-    <section class="header">
-      <div class="nav">
-        <div class="nav__left">
+  <section class="header">
+    <div class="nav">
+      <div class="nav__left">
         <div class="nav__logo">
-          <img src="images/logo.svg" alt="">
+          <img src="images/logo.svg" alt="" />
         </div>
         <div class="nav__links">
           <div class="link dropdown">
+            <div>
             <a href="#">Features</a>
-            <img src="images/icon-arrow-down.svg" alt="">
+            <img src="images/icon-arrow-down.svg" alt="" />
+            </div>
             <div class="link__dropdown">
-              <li class="dropdown__item"><img src="images/icon-todo.svg" alt=""><span>Todo</span></li>
-              <li class="dropdown__item"><img src="images/icon-calendar.svg" alt=""><span>Calender</span></li>
-              <li class="dropdown__item"><img src="images/icon-reminders.svg" alt=""><span>reminder</span></li>
-              <li class="dropdown__item"><img src="images/icon-planning.svg" alt=""><span>planning</span></li>
+              <li class="dropdown__item">
+                <img src="images/icon-todo.svg" alt="" /><span>Todo</span>
+              </li>
+              <li class="dropdown__item">
+                <img src="images/icon-calendar.svg" alt="" /><span>Calender</span>
+              </li>
+              <li class="dropdown__item">
+                <img src="images/icon-reminders.svg" alt="" /><span>reminder</span>
+              </li>
+              <li class="dropdown__item">
+                <img src="images/icon-planning.svg" alt="" /><span>planning</span>
+              </li>
             </div>
           </div>
-        </div>
+          <div class="link dropdown">
+            <a href="#">Company</a>
+            <img src="images/icon-arrow-down.svg" alt="" />
+            <div class="link__dropdown">
+              <li class="dropdown__item"><span>History</span></li>
+              <li class="dropdown__item"><span>Our team</span></li>
+              <li class="dropdown__item"><span>blog</span></li>
+            </div>
+          </div>
+          <div class="link">
+            <li>Careers</li>
+          </div>
+          <div class="link">
+            <li>About</li>
+          </div>
         </div>
       </div>
-    </section>
+      <div class="nav__right">
+        <button>login</button>
+        <button>register</button>
+      </div>
+    </div>
+  </section>
 
-<script src="script.js"></script>
+  <script src="script.js"></script>
 </body>
+
 </html>

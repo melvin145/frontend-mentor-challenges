@@ -18,6 +18,10 @@ h1,h2,h3{
       font-size: var(--fnt-lrg);
       color: var(--black);
 }
+img{
+      max-width: 100%;
+      height: auto;
+}
 p{
       font-size: var(--fnt-sm);
       color: var(--gray);
@@ -27,6 +31,28 @@ body{
       background-color: var(--primary-color);
 }
 .header{
-      padding: 1.5rem 1.5rem;
-      position: relative;
+      padding: 2.5rem 1.5rem;
+      background-color: var(--primary-color);
+      height: 2rem;
+      overflow: hidden;
+}
+.nav{
+      display: flex;
+      justify-content: space-between;
+}
+.nav__left{
+      display: flex;
+      justify-content: space-between;
+      gap: 2rem;
+}
+.nav__logo img{
+      width: 90%;
+}
+.nav__links{
+      display:flex;
+      justify-content: space-around;
+      gap: 2rem;
+}
+.link__dropdown{
+      margin-top: 30rem;
 }
