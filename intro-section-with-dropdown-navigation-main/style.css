@@ -33,7 +33,7 @@ body{
 .header{
       padding: 2.5rem 1.5rem;
       background-color: var(--primary-color);
-      height: 2rem;
+      min-height: .5rem;
 
 }
 .nav{
@@ -60,11 +60,13 @@ body{
 }
 .link__dropdown{
       margin-top: 0rem;
+      display: none;
       border-radius: 5px;
-      box-shadow: 10px 10px 10px;
+      box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
       position:relative;
       margin-top: 10px;
-      right: 5px;
+      top: 0;
+      right: 15px;
       padding: .8rem 1.2rem;
       background-color: var(--primary-color);
       overflow-y:hidden;
