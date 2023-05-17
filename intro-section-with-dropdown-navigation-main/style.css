@@ -70,12 +70,13 @@ body{
       display: flex;
       margin-top: 10px ;
       align-items: center;
+      text-align: left;
       gap: .5rem;
 }
 .dropdown__item img{
       
 }
-.dropdown__item span{
-      text-align: center;
+.dropdown__item h4{
+      text-align: left;
       font-size: var(--fnt-sm2);
 }
