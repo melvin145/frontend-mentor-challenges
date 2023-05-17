@@ -9,9 +9,9 @@
       --primary-color:hsl(0, 0%, 98%);
       --black:hsl(0, 0%, 8%);
       --gray:hsl(0, 0%, 41%);
-      --fnt-sm:1rem;
+      --fnt-sm:.95rem;
       --fnt-sm2:.9rem;
-      --fnt-m:1.5rem;
+      --fnt-m:1.3rem;
       --fnt-lrg:2rem;
 }
 h1,h2,h3{
@@ -21,6 +21,13 @@ h1,h2,h3{
 img{
       max-width: 100%;
       height: auto;
+}
+li{
+      list-style: none;
+}
+a{
+      text-decoration: none;
+      color: var(--black);
 }
 p{
       font-size: var(--fnt-sm);
@@ -46,7 +53,8 @@ body{
       gap: 2rem;
 }
 .nav__logo img{
-      width: 90%;
+      width: 80%;
+      text-align: center;
 }
 .nav__links{
       display:flex;
@@ -71,6 +79,12 @@ body{
       background-color: var(--primary-color);
       overflow-y:hidden;
 }
+.dropdown a{
+      padding-right: 10px;
+}
+.dropdown img{
+      width: 12px;
+}
 .dropdown__item {
       display: flex;
       margin-top: 10px ;
@@ -86,4 +100,34 @@ body{
       font-weight: 400;
       color: var(--gray);
       font-size: var(--fnt-sm2);
+}
+.nav__right{
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+}
+.login__btn{
+      background: none;
+      border: none;
+      outline: none;
+      font-size: var(--fnt-sm);
+}
+.register__btn{
+      padding: .5em .8em;
+      border: 1px solid var(--black);
+      border-radius: 5px;
+      font-size: var(--fnt-sm);
+      background-color: var(--primary-color);
+
+}
+
+@media screen and (max-width:380px){
+      :root{
+            --fnt-sm:.85rem;
+            --fnt-sm2:.6rem;
+            --fnt-m:1rem;
+            --fnt-lrg:1.5rem;
+      }
+      
+
 }
