@@ -34,7 +34,7 @@ body{
       padding: 2.5rem 1.5rem;
       background-color: var(--primary-color);
       height: 2rem;
-      overflow: hidden;
+
 }
 .nav{
       display: flex;
@@ -53,6 +53,29 @@ body{
       justify-content: space-around;
       gap: 2rem;
 }
+.dropdown{
+      position: relative;
+}
 .link__dropdown{
-      margin-top: 30rem;
+      margin-top: 0rem;
+      border-radius: 5px;
+      position:relative;
+      margin-top: 10px;
+      right: 5px;
+      padding: .8rem 1.2rem;
+      background-color: antiquewhite;
+      overflow-y:hidden;
+}
+.dropdown__item {
+      display: flex;
+      margin-top: 10px ;
+      align-items: center;
+      gap: .5rem;
+}
+.dropdown__item img{
+      
+}
+.dropdown__item span{
+      text-align: center;
+      font-size: var(--fnt-sm2);
 }
