@@ -34,17 +34,16 @@
 
   <body>
     <section class="header">
-      <div class="nav">
+      <div class="nav__logo">
+        <img src="images/logo.svg" alt=""/>
+      </div>
+      <div class="nav" id="nav">
         <div class="nav__left">
-          <div class="nav__logo">
-            <img src="images/logo.svg" alt="" />
-          </div>
-          <div class="nav__sidebar">
             <div class="nav__links">
               <div class="link dropdown">
                 <div>
                   <a href="#">Features</a>
-                  <img src="images/icon-arrow-down.svg" alt="" />
+                  <img class="dropdown_icon" src="images/icon-arrow-down.svg" alt="" />
                 </div>
                 <div class="link__dropdown">
                   <li class="dropdown__item">
@@ -71,7 +70,7 @@
               </div>
               <div class="link dropdown">
                 <a href="#">Company</a>
-                <img src="images/icon-arrow-down.svg" alt="" />
+                <img  class ="dropdown__icon" src="images/icon-arrow-down.svg" alt="" />
                 <div class="link__dropdown">
                   <li class="dropdown__item"><h4>History</h4></li>
                   <li class="dropdown__item"><h4>Our team</h4></li>
@@ -85,16 +84,16 @@
                 <li>About</li>
               </div>
             </div>
-            <div class="nav__right">
+        </div>
+          <div class="nav__right">
             <button class="login__btn">login</button>
             <button class="register__btn">register</button>
-            </div>
           </div>
-         <!---- <div class="nav__icons">
-            <img class="menu__icon" id='open' src="images/icon-menu.svg" alt="">
-            <img  class="close__icon" id="close" src="images/icon-close-menu.svg" alt="">
-          </div>-->
-        </div>
+      </div>
+      <div class="nav__icons" >
+        <img class="menu__icon" id='open' src="images/icon-menu.svg" alt="">
+        <img  class="close__icon hidden" id="close" src="images/icon-close-menu.svg" alt="">
+      </div>
     </section>
 
     <script src="script.js"></script>

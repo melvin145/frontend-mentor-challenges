@@ -1,8 +1,12 @@
 function ToggleHandler(){
       const menu=document.getElementById('open');
-      const sidebar=document.getElementById('sidebar');
+      const nav=document.getElementById('nav');
       menu.addEventListener('click',()=>{
-            console.log("heloo world");
-            sidebar.classList.toggle('show_menu');
+            nav.classList.toggle('show_menu');
       })
 }
+
+function ShowDropdown(){
+      const dropIcon=document.querySelectorAll('.dropdown__icon')
+}
+ToggleHandler();
