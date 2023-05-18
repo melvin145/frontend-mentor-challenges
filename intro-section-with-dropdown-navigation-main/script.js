@@ -7,6 +7,12 @@ function ToggleHandler(){
 }
 
 function ShowDropdown(){
-      const dropIcon=document.querySelectorAll('.dropdown__icon')
+      const dropIcon=document.querySelectorAll('.dropdown__icon');
+      dropIcon.forEach((e)=>{
+            e.addEventListener('click',()=>{
+                  
+            })
+      })
 }
 ToggleHandler();
+ShowDropdown();

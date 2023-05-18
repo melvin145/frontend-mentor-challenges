@@ -76,19 +76,18 @@ body{
 }
 .link__dropdown{
       margin-top: 0rem;
-      display: none;
       border-radius: 5px;
       box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-      position:relative;
+      position:absolute;
       margin-top: 10px;
-      top: 0;
+      top: 15px;
       right: 15px;
       padding: .8rem 1.2rem;
       background-color: var(--primary-color);
       overflow-y:hidden;
 }
 .dropdown a{
-      padding-right: 7px;
+      padding-right: 5px;
 }
 .dropdown img{
       width: 12px;
@@ -138,7 +137,9 @@ body{
       width: 70%;
       margin-top: 5px;
 }
-
+.active{
+      display: block;
+}
 @media screen and (max-width:380px){
       :root{
             --fnt-sm:.85rem;
