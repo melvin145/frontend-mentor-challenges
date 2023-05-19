@@ -10,7 +10,7 @@
       --black:hsl(0, 0%, 8%);
       --gray:hsl(0, 0%, 41%);
       --fnt-sm:.95rem;
-      --fnt-sm2:.875rem;
+      --fnt-sm2:.8rem;
       --fnt-m:1.3rem;
       --fnt-lrg:2rem;
 }
@@ -41,7 +41,7 @@ body{
       padding: 2.5rem 1rem;
       background-color: var(--primary-color);
       min-height: 2rem;
-      gap: 4rem;
+      gap: 2rem;
       display: flex;
       position: relative;
       justify-content: space-between;
@@ -55,6 +55,7 @@ body{
 .nav__left{
       display: flex;
       justify-content: space-between;
+      align-items: center;
       gap: 1rem;
 }
 .nav__logo{
@@ -73,16 +74,20 @@ body{
 }
 .dropdown{
       position: relative;
+    
 }
 .link__dropdown{
       margin-top: 0rem;
       border-radius: 5px;
       box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
       position:absolute;
+      display: none;
       margin-top: 10px;
-      top: 15px;
-      right: 15px;
-      padding: .8rem 1.2rem;
+  
+      width: 100%;
+      top: 10px;
+      right: 0px;
+      padding: .5rem .8rem;
       background-color: var(--primary-color);
       overflow-y:hidden;
 }
@@ -90,29 +95,30 @@ body{
       padding-right: 5px;
 }
 .dropdown img{
-      width: 12px;
+      width: 13px;
+      cursor: pointer;
 }
 .dropdown__item {
       display: flex;
       margin-top: 10px ;
       align-items: center;
-      gap: .8rem;
+      gap: .5rem;
 }
 
 .dropdown__item img{
-      width: 15px;
+      width: 12px;
       cursor: pointer;
 }
 .dropdown__item h4{
       text-align: left;
       font-weight: 400;
       color: var(--gray);
-      font-size: var(--fnt-sm2);
+      font-size: 12px;
 }
 .nav__right{
       display: flex;
-      align-items: center;
       gap: 1rem;
+      align-items: center;
 }
 .login__btn{
       background: none;
@@ -143,7 +149,7 @@ body{
 @media screen and (max-width:380px){
       :root{
             --fnt-sm:.85rem;
-            --fnt-sm2:.6rem;
+            --fnt-sm2:.8rem;
             --fnt-m:1rem;
             --fnt-lrg:1.5rem;
             --sidebar-color:rgb(231, 231, 231);
@@ -179,6 +185,11 @@ body{
             gap: 1.5rem;
             flex-direction: column;
             
+      }
+      .link__dropdown{
+            position:relative;
+            margin-top: 0px;
+            width: 100%;
       }
 
 
