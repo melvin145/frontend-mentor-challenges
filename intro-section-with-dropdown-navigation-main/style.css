@@ -164,7 +164,6 @@ body{
       gap: 2.5rem;
       text-align: left;
       padding-top: 5rem;
-      background-color: blue;
       height: 100%;
       flex-direction: column;
 }
@@ -213,10 +212,10 @@ body{
 
 @media screen and (max-width:380px){
       :root{
-            --fnt-sm:.85rem;
+            --fnt-sm:.9rem;
             --fnt-sm2:.9rem;
             --fnt-m:1rem;
-            --fnt-lrg:2rem;
+            --fnt-lrg:2.3rem;
             --sidebar-color:rgb(231, 231, 231);
       }
       .nav{
@@ -240,7 +239,7 @@ body{
             gap: 1rem;
             top: 0;
             right: 0;
-            width: 150px;
+            width: 200px;
             align-items: flex-start;
             height: 100%;
             background-color: var(--sidebar-color);
@@ -260,7 +259,8 @@ body{
             flex-direction: column-reverse;
       }
       .main__content{
-            gap: 1.5rem;
+            gap: 2.5rem;
+            padding-top:10px;
             text-align: center;
       }
       .content__title{
