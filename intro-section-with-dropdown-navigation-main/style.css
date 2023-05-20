@@ -206,17 +206,22 @@ body{
       max-width: 400px;
       height: 100%;
 }
+.img-mobile{
+      display: none;
+}
 .image__section img{
       height: 100%;
 }
-
+.hidden{
+      display: none;
+}
 @media screen and (max-width:380px){
       :root{
             --fnt-sm:.9rem;
             --fnt-sm2:.9rem;
             --fnt-m:1rem;
             --fnt-lrg:2.3rem;
-            --sidebar-color:rgb(231, 231, 231);
+            --sidebar-color:rgb(255, 255, 255);
       }
       .nav{
             display: none;
@@ -227,10 +232,10 @@ body{
       .nav__icons{
             display: block;
             cursor: pointer;
-      }
-      .hidden{
-            display: none;
-      }
+            position: fixed;
+            right: 10px;
+            z-index: 1;
+      } 
       .show_menu{
             display: flex;
             position: fixed;
@@ -243,7 +248,7 @@ body{
             align-items: flex-start;
             height: 100%;
             background-color: var(--sidebar-color);
-            padding: 2rem 1rem;
+            padding: 4rem 1rem;
       }
       .nav__links{
             gap: 1.5rem;
@@ -281,6 +286,12 @@ body{
       }
       .icon img{
             width: 100%;
+      }
+      .img-desktop{
+            display: none;
+      }
+      .img-mobile{
+            display: flex;
       }
 
 
