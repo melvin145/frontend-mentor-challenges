@@ -259,12 +259,8 @@ body{
             flex-direction: column-reverse;
       }
       .main__content{
-            display: flex;
-            gap: 2.5rem;
+            gap: 1.5rem;
             text-align: center;
-            padding-top: 5rem;
-            height: 100%;
-            flex-direction: column;
       }
       .content__description{
             width: 100%;
