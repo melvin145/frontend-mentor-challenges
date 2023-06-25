@@ -37,14 +37,16 @@
             </div>
             <div class="email">
               <label for="email">Email address</label>
-              <input type="email" placeholder="email@company.com" id="email">
+              <input type="email" placeholder="email@company.com" id="emailId">
+              <p class="err-msg" id="errmsg">Enter valid email address</p>
             </div>
-            <button id="subscribebtn"  onclick="OpenPopup()" class="primary__btn"> Subscribe to monthly newsletter</button>
+            <button id="subscribebtn"  class="primary__btn"> Subscribe to monthly newsletter</button>
           </div>
         </div>
         <!----------------------Popup----------------------->
         <div id="popupContainer" class="popup__container">
           <div class="popup__content">
+            <div class="content">
               <div class="icon">
                 <img src="assets/images/icon-success.svg" alt="">
               </div>
@@ -52,13 +54,14 @@
                 Thank for Subscribing!
               </div>
               <div class="popup__description">
-                A confirmation email has been sent to ash@loremcompany.com. 
+                A confirmation email has been sent to <span id="popupemail"></span> 
                 Please open it and click the button inside to confirm your subscription.
               </div>
+            </div>
+            <button id="dismissBtn" onclick="ClosePopup()" class="popup__btn">
+              Dismiss Message
+            </button>
           </div>
-          <button id="dismissBtn" onclick="ClosePopup()" class="popup__btn">
-            Dismiss Message
-          </button>
         </div>
     </section>
     <script src="script.js"></script>

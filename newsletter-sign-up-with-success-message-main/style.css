@@ -100,7 +100,10 @@ button{
       background: linear-gradient(to right, #ff416c, #ff4b2b);
       transition: all .5s ease-in;
 }
-.popup__container{
+.popup{
+
+}
+/**.popup__container{
       position: absolute;
       background-color: var(--White);
       top: 0;
@@ -111,11 +114,38 @@ button{
       height: 100%;
       visibility: visible;
       opacity: 1;
-}
-.popup__content{
+}**/
+/**.popup__content{
       display: flex;
       flex-direction: column;
       gap: 25px;
+}**/
+.popup__container{
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      top: 0;
+      left: 0;
+      visibility: hidden;
+      overflow: hidden;
+      z-index: 1;
+      background-color: var(--CharcoalGrey);
+}
+.popup__content{
+      background-color: var(--White);
+      height: 100%;
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      padding: 1rem 1rem; 
+
+}
+.content{
+      display: flex;
+      padding-top: 6rem;
+      flex-direction: column;
+      gap: 20px;
 }
 .popup__content .icon{
       width: 50px;
@@ -131,20 +161,28 @@ button{
       color: var(--CharcoalGrey);
 }
 .popup__btn{
-      justify-self: flex-end;
       font-size: .9rem;
       color: #e5e5e5;
+      justify-self: flex-end;
       padding: .9rem 1rem;
       border-radius: 5px;
-      margin-top: 20px;
+      width: 100%;
       background: var(--CharcoalGrey);
 }
 .popup__btn:hover{
       background: linear-gradient(to right, #ff416c, #ff4b2b);
       transition: all .5s ease-in;
 }
-
-@media screen and (min-width:400px){
+.showpopup {
+      visibility: visible;
+      opacity: 1;
+}
+#errmsg{
+      color: red;
+      margin-top:10px;
+      font-size: .7rem;
+}
+@media screen and (min-width:500px){
       .container{
             min-height: 100vh;
             display: grid;
@@ -182,18 +220,25 @@ button{
             background-position: center;
             background-size: cover;
       }
-      .popup__container{
-            max-width: 400px;
-            margin: auto;
-            height: auto;
-            border-radius: 20px;
-            top: 50%;
-            justify-content: center;
-            left: 50%;
-            transform: translate(-50%,-50%);
-            padding: 2rem;
-      }
       .popup__content{
+            max-width: 350px;
+            width: 100%;
+            display:flex;
+            margin: auto;
+            padding: 2rem 1.5rem;
             gap: 20px;
+            border-radius: 20px;
+            height: auto;
+            overflow: hidden;
+            transition: transform .2s ease-out;
+      }
+      .showpopup{
+            visibility: visible;
+      }
+      .showpopup .popup__content{
+            transform: translateY(30%);
+      }
+      .content{
+            padding-top: 0;
       }
 }
