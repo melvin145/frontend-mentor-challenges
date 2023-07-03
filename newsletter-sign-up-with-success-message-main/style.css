@@ -166,7 +166,7 @@ button{
       justify-self: flex-end;
       padding: .9rem 1rem;
       border-radius: 5px;
-      width: 
+      width: 100%;
       background: var(--CharcoalGrey);
 }
 .popup__btn:hover{
