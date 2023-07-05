@@ -71,7 +71,7 @@ button{
       grid-template-columns: 1fr 7fr;
 }
 .feature h4{
-      font-size: .9rem;
+      font-size: ;
       font-weight: 400;
       color: var(--CharcoalGrey);
 }
