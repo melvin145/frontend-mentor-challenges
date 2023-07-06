@@ -5,7 +5,7 @@ function ToggleHandler(){
       menu.addEventListener('click',()=>{
             nav.classList.toggle('show_menu');
             menu.classList.add('hidden')
-            close.classList.remove('hidden');
+            close.classList.remove('');
 
       })
       close.addEventListener('click',()=>{
