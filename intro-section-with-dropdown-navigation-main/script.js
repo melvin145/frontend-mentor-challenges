@@ -2,7 +2,7 @@ function ToggleHandler(){
       const menu=document.getElementById('open');
       const close=document.getElementById('close');
       const nav=document.getElementById('nav');
-      menu.addEventListener('click',()=>{
+      menu.addEventListener('abort',()=>{
             nav.classList.toggle('show_menu');
             menu.classList.add('hidden')
             close.classList.remove('hidden');
