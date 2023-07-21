@@ -26,6 +26,6 @@ function Checker(){
             errmsg.style.display="none";
       }
       else{
-            errmsg.style.display='block';
+            errmsg.style.display='none';
       }
 }
